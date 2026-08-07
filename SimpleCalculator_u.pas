@@ -39,6 +39,7 @@ type
     procedure btnMinusClick(Sender: TObject);
     procedure btnTimesClick(Sender: TObject);
     procedure btnDivideClick(Sender: TObject);
+    procedure btnZeroClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -242,6 +243,18 @@ begin
   else if bTwo = True then
   begin
     sNumber2 := sNumber2 + '2';
+  end;
+end;
+
+procedure TfrmCalculator.btnZeroClick(Sender: TObject);
+begin
+if bTwo = False then
+  begin
+    sNumber1 := sNumber1 + '0';
+  end
+  else if bTwo = True then
+  begin
+    sNumber2 := sNumber2 + '0';
   end;
 end;
 

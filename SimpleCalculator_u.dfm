@@ -220,6 +220,7 @@ object frmCalculator: TfrmCalculator
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
     TabOrder = 13
+    OnClick = btnZeroClick
   end
   object btnEquals: TButton
     Left = 200
